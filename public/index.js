@@ -1,8 +1,9 @@
-const { converterPontos } = require("./utils/conversor");
+function converterPontos(score) {
+  if (score < 0) return 0;
+  return score * 10;
+}
 
 function criarTabela(jogadores) {
-  const jogadoresOrdenados = [...jogadores].sort((a, b) => b.pontos - a.pontos);
-
   const tabela = document.createElement("table");
   tabela.innerHTML = `
     <thead>
@@ -16,7 +17,7 @@ function criarTabela(jogadores) {
       </tr>
     </thead>
     <tbody>
-      ${jogadoresOrdenados
+      ${jogadores
         .map(
           (j, index) => `
         <tr>
@@ -68,18 +69,15 @@ function criarGrafico(jogadores) {
 
 function montarDashboard(jogadores) {
   const app = document.getElementById("app");
-  app.innerHTML = ""; // Limpar para evitar duplicações
-
+  app.innerHTML = "";
   const titulo = document.createElement("h1");
   titulo.textContent = "Dashboard PixelTrack - Ranking e Estatísticas";
 
-  const canvas = document.createElement("canvas");
-  canvas.id = "graficoPontos";
+  const jogadoresOrdenados = jogadores.sort((a, b) => b.pontos - a.pontos);
 
   app.appendChild(titulo);
-  app.appendChild(criarTabela(jogadores));
-  app.appendChild(canvas);
-  criarGrafico(jogadores);
+  app.appendChild(criarTabela(jogadoresOrdenados));
+  criarGrafico(jogadoresOrdenados);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

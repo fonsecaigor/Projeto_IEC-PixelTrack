@@ -1,15 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PixelTrack Estatística eSports</title>
+  <title>PixelTrack Dashboard</title>
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="stylesheet" href="./style.css">
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #999;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #eee;
+    }
+    canvas {
+      margin-top: 20px;
+      max-width: 800px;
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
-  <canvas id="graficoPontos" width="600" height="300"></canvas>
+  <canvas id="graficoPontos" width="400" height="200"></canvas>
   <script src="./index.js"></script>
 </body>
 </html>
