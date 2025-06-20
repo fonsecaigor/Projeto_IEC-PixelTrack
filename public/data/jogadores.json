@@ -1,0 +1,6 @@
+[
+  { "nome": "PlayerOne", "partidas": 12, "vitorias": 8, "pontos": 150 },
+  { "nome": "Shadow", "partidas": 20, "vitorias": 14, "pontos": 210 },
+  { "nome": "Z3RO", "partidas": 15, "vitorias": 9, "pontos": 180 },
+  { "nome": "Nova", "partidas": 10, "vitorias": 6, "pontos": 130 }
+]

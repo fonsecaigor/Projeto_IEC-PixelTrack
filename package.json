@@ -1,0 +1,13 @@
+{
+  "name": "pixeltrack-dashboard",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "echo 'simulando build do frontend'",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
