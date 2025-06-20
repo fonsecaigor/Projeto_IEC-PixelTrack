@@ -1,7 +1,4 @@
-function converterPontos(score) {
-  if (score < 0) return 0;
-  return score * 10;
-}
+const { converterPontos } = require("./utils/conversor");
 
 function criarTabela(jogadores) {
   const jogadoresOrdenados = [...jogadores].sort((a, b) => b.pontos - a.pontos);
