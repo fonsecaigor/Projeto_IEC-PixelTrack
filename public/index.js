@@ -81,7 +81,7 @@ function montarDashboard(jogadores) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("./data/jogadores.json")
+  fetch("/api/jogadores")
     .then((res) => res.json())
     .then((data) => montarDashboard(data))
     .catch((err) => console.error("Erro ao carregar os dados:", err));
