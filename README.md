@@ -86,7 +86,7 @@ Disparado em push para `main`.
 3. Adicione no GitHub: `FIREBASE_TOKEN`
 
 ```yaml
-uses: w9jds/firebase-action@v13
+uses: w9jds/firebase-action@v12.9.0
 ```
 
 ### Rollback:
