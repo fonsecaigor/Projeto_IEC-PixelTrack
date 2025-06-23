@@ -2,7 +2,6 @@
 
 Projeto completo para um painel interativo de eSports com:
 
-* Dashboard dinâmico com tabela de ranking e gráfico de pontuação
 * Conversão de pontos com lógica personalizada
 * API mockada em JSON local
 * CI/CD com GitHub Actions
@@ -11,30 +10,22 @@ Projeto completo para um painel interativo de eSports com:
 
 ---
 
-## 📚 Execução Local
-
-A aplicação é baseada em HTML/CSS/JS puro. Para executar localmente:
-
-```bash
-cd public
-npx http-server
-```
-
-Acesse via navegador: [http://localhost:8080](http://localhost:8080)
-
----
-
 ## 🧠 Estrutura do Projeto
 
 ```
 project-root/
 │
+├── data/
+│   └── jogadores.json # Dados mockados
+│
+├── docker/
+│   ├── loki-config.yaml 
+│   ├── prometheus.yml
+│   ├── promtail-config.yaml
+│
 ├── public/
 │   ├── index.html         # Entrada principal
 │   ├── index.js           # Lógica de montagem do dashboard
-│   ├── data/
-│   │   └── jogadores.json # Dados mockados
-│   └── assets/            # (Opcional) imagens e ícones
 │
 ├── tests/
 │   └── conversor.test.js  # Testes de conversão
@@ -43,6 +34,9 @@ project-root/
 │   └── ci.yml             # Pipeline CI
 │
 ├── firebase.json          # Configuração de deploy
+│
+├── docer-compose.yml
+│
 └── README.md
 ```
 
@@ -60,7 +54,10 @@ npm run test:coverage
 
 ### Resultado dos testes:
 
-![Testes](./prints/testes.png)
+![Testes](./prints/test.png)
+
+
+![Testes](./prints/testcoverage.png)
 
 ---
 
