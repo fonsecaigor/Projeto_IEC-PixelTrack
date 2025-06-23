@@ -1,4 +1,4 @@
-name: CI e Deploy
+name: CI e Deploy Firebase
 
 on:
   push:
@@ -19,6 +19,9 @@ jobs:
 
       - name: Instalar dependências
         run: npm ci
+
+      - name: Build do projeto
+        run: npm run build
 
       - name: Executar testes com cobertura
         run: npm test -- --coverage

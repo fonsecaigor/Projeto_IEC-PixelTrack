@@ -68,10 +68,6 @@ Workflow CI (`.github/workflows/ci.yml`) executa:
 * `npm ci`
 * `npm test --coverage`
 
-Disparado em push para `main`.
-
-![CI GitHub Actions](./prints/ci-pipeline.png)
-
 ---
 
 ## 🚀 Deploy Contínuo com Firebase Hosting
@@ -92,7 +88,7 @@ uses: w9jds/firebase-action@v12.9.0
 firebase hosting:rollback
 ```
 
-![Deploy Firebase](./prints/deploy-firebase.png)
+![Deploy Firebase](./prints/deployfirebase.png)
 
 ---
 
@@ -113,8 +109,9 @@ docker-compose up
 * Grafana: [http://localhost:3001](http://localhost:3001)
 * Login padrão: `admin / admin`
 
-![Grafana Metrics](./prints/grafana-metrics.png)
-![Grafana Logs](./prints/grafana-logs.png)
+![Firebase Project](./prints/firebaseproject.png)
+![Grafana Metrics](./prints/grafanametrics.png)
+![Grafana Logs](./prints/grafanalogs.png)
 
 ---
 
@@ -124,6 +121,8 @@ docker-compose up
 - Conversão de pontos com lógica de negócio
 - Gráfico de barras (Chart.js) comparando pontos originais e convertidos
 - Dados carregados via `fetch()` de JSON estático mockado
+
+![DashboardAPI](./prints/dashboardmock.png)
 
 ---
 
@@ -146,19 +145,10 @@ git commit -m "feat: adiciona conversor de pontos"
 git push origin feature/nova-funcionalidade
 ```
 
-### Exemplo de commit:
-
-```bash
-git commit -m "feat: adiciona ranking de jogadores com gráfico"
-```
-
-![Git Flow](./prints/fluxo-git.png)
-
 ---
 
 ## 🚫 Problemas Conhecidos
 
-* CORS ao tentar acessar JSON fora da pasta `public` com `http-server`
 * Monitoramento pode exigir reinicialização manual do `promtail`
 
 ---
