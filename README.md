@@ -162,4 +162,39 @@ git push origin feature/nova-funcionalidade
 
 ---
 
+## 📌 Código-Fonte Principal
+
+Trechos principais do código-fonte do projeto:
+
+### Código Conversor de Pontos
+
+![conversor.js](./prints/codigo/conversorjs.jpg)
+
+---
+
+### Código Teste 
+
+![conversor.test.js](./prints/codigo/conversortest.jpg)
+
+---
+
+### Código Index
+
+![index.js](./prints/codigo/indexjs.jpg)
+
+---
+
+### Código Package
+
+![package.json](./prints/codigo/packagejson.jpg)
+
+---
+
+### Fluxograma - Modelo de Ramificação
+
+![fluxograma](./prints/codigo/fluxograma.png)
+
+---
+
+
 **Desenvolvido por:** Equipe PixelTrack
